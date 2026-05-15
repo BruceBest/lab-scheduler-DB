@@ -2,7 +2,7 @@
   "id": "goal-014",
   "title": "goto work!!!!",
   "description": null,
-  "status": "review",
+  "status": "todo",
   "priority": null,
   "color": "#FEF3C7",
   "assignees": [
@@ -14,7 +14,7 @@
   "issue_url": null,
   "pr_url": null,
   "created_at": "2026-05-08T00:00:00+00:00",
-  "updated_at": "2026-05-15T03:27:26.418911",
+  "updated_at": "2026-05-15T03:27:42.360053",
   "due_date": null,
   "completed_at": null,
   "blocker_reason": null,
