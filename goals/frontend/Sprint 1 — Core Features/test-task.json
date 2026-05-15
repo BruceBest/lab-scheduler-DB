@@ -1,0 +1,33 @@
+{
+  "id": "goal-021",
+  "title": "test task",
+  "description": null,
+  "status": "todo",
+  "priority": "medium",
+  "color": null,
+  "assignees": [
+    "lzy@umich.edu",
+    "brulyu@umich.edu"
+  ],
+  "department": "frontend",
+  "milestone": "Sprint 1 \u2014 Core Features",
+  "labels": [],
+  "issue_url": null,
+  "pr_url": null,
+  "created_at": "2026-05-15T19:24:55.669060",
+  "updated_at": "2026-05-15T19:24:55.669060",
+  "start_date": "2026-05-15",
+  "due_date": "2026-05-22",
+  "completed_at": null,
+  "blocker_reason": null,
+  "completion_note": null,
+  "review_feedback": null,
+  "reviewer": null,
+  "deliverables": [],
+  "_position": 0,
+  "_actual_hours": null,
+  "_estimated_hours": null,
+  "_task_group_id": null,
+  "_milestone_id": 6,
+  "_blocked_by": []
+}
