@@ -2,7 +2,7 @@
   "id": "goal-001",
   "title": "Set up Kanban board with drag-and-drop",
   "description": "Implement a 5-column kanban board: To Do, Doing, Review, Done, Blocked",
-  "status": "review",
+  "status": "todo",
   "priority": "high",
   "color": "#FFD700",
   "assignees": [
@@ -14,7 +14,7 @@
   "issue_url": null,
   "pr_url": null,
   "created_at": "2026-05-14T00:00:00+00:00",
-  "updated_at": "2026-05-15T03:09:56.924813",
+  "updated_at": "2026-05-15T03:10:00.982360",
   "due_date": "2026-05-28",
   "completed_at": null,
   "blocker_reason": null,
