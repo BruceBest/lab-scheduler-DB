@@ -1,0 +1,31 @@
+{
+  "id": "goal-002",
+  "title": "E2E Test Task",
+  "description": null,
+  "status": "todo",
+  "priority": "high",
+  "color": "#3B82F6",
+  "assignees": [
+    "brulyu@umich.edu"
+  ],
+  "department": "engineering",
+  "milestone": "2026-Q2",
+  "labels": [],
+  "issue_url": null,
+  "pr_url": null,
+  "created_at": "2026-05-15T02:37:59.628969+00:00",
+  "updated_at": "2026-05-15T02:37:59.628979+00:00",
+  "due_date": null,
+  "completed_at": null,
+  "blocker_reason": null,
+  "completion_note": null,
+  "review_feedback": null,
+  "reviewer": null,
+  "deliverables": [],
+  "_position": 0,
+  "_actual_hours": null,
+  "_estimated_hours": null,
+  "_task_group_id": null,
+  "_blocked_by": [],
+  "_blocked_until": null
+}
