@@ -3,15 +3,15 @@
 import json, sqlite3, os, sys
 from pathlib import Path
 
-DB_PATH = Path(__file__).parent / "db" / "index.sqlite"
-GOALS_PATH = Path(__file__).parent / "goals"
+ROOT = Path(__file__).parent.parent  # repo root, not scripts/
+DB_PATH = ROOT / "db" / "index.sqlite"
+GOALS_PATH = ROOT / "goals"
 
 DB_PATH.parent.mkdir(exist_ok=True)
 conn = sqlite3.connect(str(DB_PATH))
-conn.execute("CREATE VIRTUAL TABLE IF NOT EXISTS tasks_fts USING fts5(id, title, description, status, department, milestone, assignees, labels, content='', tokenize='unicode61')")
-
-# Clear and rebuild
-conn.execute("DELETE FROM tasks_fts")
+# Clear and rebuild (DROP instead of DELETE — contentless FTS5 doesn't support DELETE)
+conn.execute("DROP TABLE IF EXISTS tasks_fts")
+conn.execute("CREATE VIRTUAL TABLE tasks_fts USING fts5(id, title, description, status, department, milestone, assignees, labels, content='', tokenize='unicode61')")
 for f in GOALS_PATH.rglob("*.json"):
     with open(f) as fh:
         task = json.load(fh)
