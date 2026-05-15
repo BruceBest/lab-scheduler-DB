@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Task",
+  "type": "object",
+  "required": ["id", "title", "status", "department", "milestone"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^goal-\d{3}$"},
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string"},
+    "status": {"enum": ["todo", "doing", "review", "done", "blocked"]},
+    "priority": {"enum": ["low", "medium", "high", "critical"]},
+    "color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+    "assignees": {"type": "array", "items": {"type": "string", "format": "email"}},
+    "department": {"type": "string"},
+    "milestone": {"type": "string"},
+    "labels": {"type": "array", "items": {"type": "string"}},
+    "issue_url": {"type": ["string", "null"]},
+    "pr_url": {"type": ["string", "null"]},
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "due_date": {"type": ["string", "null"], "format": "date"},
+    "completed_at": {"type": ["string", "null"], "format": "date-time"},
+    "blocker_reason": {"type": "string"},
+    "completion_note": {"type": "string"},
+    "review_feedback": {"type": "string"},
+    "reviewer": {"type": "string"},
+    "deliverables": {"type": "array", "items": {
+      "type": "object",
+      "properties": {
+        "type": {"enum": ["file", "github_pr", "figma", "google_drive", "docs", "other"]},
+        "url": {"type": "string"},
+        "title": {"type": "string"}
+      }
+    }}
+  }
+}

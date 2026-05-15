@@ -1,0 +1,28 @@
+name: Validate Tasks
+
+on:
+  push:
+    paths:
+      - 'goals/**/*.json'
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON schemas
+        run: |
+          for f in $(find goals -name "*.json"); do
+            echo "Validating $f"
+            python3 -c "
+import json, sys
+with open('$f') as fh:
+    data = json.load(fh)
+required = ['id', 'title', 'status', 'department', 'milestone']
+for r in required:
+    assert r in data, f'Missing {r} in $f'
+assert data['status'] in ('todo', 'doing', 'review', 'done', 'blocked'), f'Invalid status in $f'
+print(f'  OK: {data["id"]} - {data["title"][:40]}')
+"
+          done
