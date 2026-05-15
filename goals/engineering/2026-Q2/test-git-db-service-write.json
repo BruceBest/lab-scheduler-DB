@@ -1,8 +1,8 @@
 {
-  "id": "goal-002",
+  "id": "goal-003",
   "title": "Test Git-DB service write",
-  "description": "Updated description after status change",
-  "status": "doing",
+  "description": "Verify that creating tasks writes JSON files and commits to git",
+  "status": "todo",
   "priority": "high",
   "color": "#10B981",
   "assignees": [
@@ -13,8 +13,8 @@
   "labels": [],
   "issue_url": null,
   "pr_url": null,
-  "created_at": "2026-05-15T02:27:21.194172+00:00",
-  "updated_at": "2026-05-15T02:27:21.241723+00:00",
+  "created_at": "2026-05-15T02:28:47.581651+00:00",
+  "updated_at": "2026-05-15T02:28:47.581661+00:00",
   "due_date": null,
   "completed_at": null,
   "blocker_reason": null,
