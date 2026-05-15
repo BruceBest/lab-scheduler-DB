@@ -2,7 +2,7 @@
   "id": "goal-002",
   "title": "E2E test: verify full CRUD",
   "description": null,
-  "status": "todo",
+  "status": "doing",
   "priority": "medium",
   "color": "#3B82F6",
   "assignees": [
@@ -14,7 +14,7 @@
   "issue_url": null,
   "pr_url": null,
   "created_at": "2026-05-15T02:30:04.726705+00:00",
-  "updated_at": "2026-05-15T02:30:04.726715+00:00",
+  "updated_at": "2026-05-15T02:30:04.944136+00:00",
   "due_date": null,
   "completed_at": null,
   "blocker_reason": null,
