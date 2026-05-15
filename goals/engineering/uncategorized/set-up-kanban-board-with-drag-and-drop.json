@@ -1,0 +1,31 @@
+{
+  "id": "goal-016",
+  "title": "Set up Kanban board with drag-and-drop",
+  "description": "Implement a 5-column kanban board: To Do, Doing, Review, Done, Blocked",
+  "status": "todo",
+  "priority": "high",
+  "color": "#FFD700",
+  "assignees": [
+    "brulyu@umich.edu"
+  ],
+  "department": "engineering",
+  "milestone": "uncategorized",
+  "labels": [],
+  "issue_url": null,
+  "pr_url": null,
+  "created_at": "2026-05-15T03:28:25.335390",
+  "updated_at": "2026-05-15T03:28:25.335390",
+  "due_date": null,
+  "completed_at": null,
+  "blocker_reason": null,
+  "completion_note": null,
+  "review_feedback": null,
+  "reviewer": null,
+  "deliverables": [],
+  "_position": 0,
+  "_actual_hours": null,
+  "_estimated_hours": null,
+  "_task_group_id": null,
+  "_milestone_id": null,
+  "_blocked_by": []
+}
