@@ -2,7 +2,7 @@
   "id": "goal-002",
   "title": "Docker test task",
   "description": "Created from inside Docker container",
-  "status": "todo",
+  "status": "doing",
   "priority": null,
   "color": null,
   "assignees": [
@@ -14,7 +14,7 @@
   "issue_url": null,
   "pr_url": null,
   "created_at": "2026-05-15T03:02:22.417376",
-  "updated_at": "2026-05-15T03:02:22.417376",
+  "updated_at": "2026-05-15T03:02:22.501807",
   "due_date": null,
   "completed_at": null,
   "blocker_reason": null,
