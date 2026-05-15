@@ -9,9 +9,15 @@ GOALS_PATH = ROOT / "goals"
 
 DB_PATH.parent.mkdir(exist_ok=True)
 conn = sqlite3.connect(str(DB_PATH))
-# Clear and rebuild (DROP instead of DELETE — contentless FTS5 doesn't support DELETE)
+# Drop and recreate — internal content table (no content='') so column values
+# are retrievable in SELECT and MATCH queries return actual row data.
 conn.execute("DROP TABLE IF EXISTS tasks_fts")
-conn.execute("CREATE VIRTUAL TABLE tasks_fts USING fts5(id, title, description, status, department, milestone, assignees, labels, content='', tokenize='unicode61')")
+conn.execute(
+    "CREATE VIRTUAL TABLE tasks_fts USING fts5("
+    "id, title, description, status, department, milestone, assignees, labels, "
+    "tokenize='unicode61'"
+    ")"
+)
 for f in GOALS_PATH.rglob("*.json"):
     with open(f) as fh:
         task = json.load(fh)
