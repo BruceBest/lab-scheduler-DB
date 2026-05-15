@@ -2,7 +2,7 @@
   "id": "goal-001",
   "title": "Set up Kanban board with drag-and-drop",
   "description": "Implement a 5-column kanban board: To Do, Doing, Review, Done, Blocked",
-  "status": "todo",
+  "status": "review",
   "priority": "high",
   "color": "#FFD700",
   "assignees": [
@@ -10,19 +10,22 @@
   ],
   "department": "engineering",
   "milestone": "2026-Q2",
-  "labels": [
-    "frontend",
-    "ux"
-  ],
+  "labels": [],
   "issue_url": null,
   "pr_url": null,
-  "created_at": "2026-05-14T00:00:00Z",
-  "updated_at": "2026-05-14T00:00:00Z",
+  "created_at": "2026-05-14T00:00:00+00:00",
+  "updated_at": "2026-05-15T03:09:56.924813",
   "due_date": "2026-05-28",
   "completed_at": null,
   "blocker_reason": null,
-  "completion_note": null,
+  "completion_note": "Testing review workflow",
   "review_feedback": null,
-  "reviewer": null,
-  "deliverables": []
+  "reviewer": "test@example.com",
+  "deliverables": [],
+  "_position": 0,
+  "_actual_hours": null,
+  "_estimated_hours": null,
+  "_task_group_id": null,
+  "_milestone_id": null,
+  "_blocked_by": []
 }
